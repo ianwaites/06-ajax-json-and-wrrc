@@ -48,6 +48,7 @@ const successCallback = function(data){
   localStorage.setItem('rawData', JSON.stringify(data))
 
   Article.loadAll(data)
+  articleView.initIndexPage();
 
 }
 
@@ -76,6 +77,6 @@ Article.fetchAll = function() {
         // Article.loadAll(data)
         // articleView.initIndexPage.toHtml();
 
-    articleView.initIndexPage();
+
   }
 };
